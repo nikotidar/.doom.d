@@ -15,13 +15,13 @@
 (setq doom-themes-enable-bold t
       doom-themes-enable-italic t)
 
-(load-theme 'doom-one-light t)
+(load-theme 'doom-one t)
 
 (doom-themes-visual-bell-config)
 (doom-themes-neotree-config)
 (doom-themes-org-config)
 
-(custom-theme-set-faces! 'doom-one-light
+(custom-theme-set-faces! 'doom-one
   `(org-priority :background ,(doom-color 'bg))
   `(mode-line :foreground ,(doom-color 'blue))
   `(mode-line-buffer-id :foreground ,(doom-color 'fg))
