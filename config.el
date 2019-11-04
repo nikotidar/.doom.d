@@ -10,6 +10,16 @@
 ;;; custom modeline
 (load! "lisp/modeline")
 
+(require 'doom-themes)
+
+(setq doom-themes-enable-bold t
+      doom-themes-enable-italic t)
+
+(load-theme 'doom-one-light t)
+
+(doom-themes-visual-bell-config)
+(doom-themes-neotree-config)
+(doom-themes-org-config)
 
 (custom-theme-set-faces! 'doom-one-light
   `(org-priority :background ,(doom-color 'bg))
